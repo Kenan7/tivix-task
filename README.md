@@ -1,5 +1,8 @@
 # tiwix
 
+<img width="654" alt="image" src="https://user-images.githubusercontent.com/11595462/195862103-21d47112-20f0-4bfd-93a8-e6cfd1a237e9.png">
+
+
 Behold My Awesome Project!
 
 [![Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)](https://github.com/cookiecutter/cookiecutter-django/)
