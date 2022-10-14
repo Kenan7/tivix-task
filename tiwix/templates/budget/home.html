@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<a href="{% url 'budget:expense-create' %}" class="btn btn-danger btn-lg btn-block">
+    <i class="bi bi-plus"></i> Expense
+</a>
+<a href="" class="btn btn-success btn-lg btn-block">
+    <i class="bi bi-dash"></i> Income
+</a>
+
+<ul class="list-group">
+    
+    {% for transaction in transactions %}
+        
+    <li class="list-group-item" href="{% url 'transaction-detail' transaction.id %}">
+        <div class="d-flex flex-row">
+            <div> - {{ transaction.amount }} {{ transaction.description }}</div>
+            <div class="ms-auto">
+                <span class="badge bg-secondary">{{ transaction.category }}</span>
+        </div>
+        </div>
+    </li>
+
+    {% endfor %}
+</ul>
+
+{% endblock content %}
